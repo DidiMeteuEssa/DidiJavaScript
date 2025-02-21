@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CJS - AULA 09</title>
+    <style>
+      body {
+        background-color: cornflowerblue;
+        color: white;
+        font: normal 18pt Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Inicando estudos DOM</h1>
+    <p id="Resultado">Restultado: N/A</p>
+    <p>Aprendendo como usar o <strong>DOM</strong> em JS.</p>
+    <span>Clique em mim</span>
+    <button onclick="alterarTema()">Alterar Tema</button>
+    <script>
+      var tema = window.confirm("Alterar o tema para escuro?");
+      if (tema) {
+        window.document.body.style.backgroundColor = "darkBlue";
+      }
+      function alterarTema() {
+        var temaAlterar = window.document.body.style.backgroundColor;
+        if (temaAlterar == "darkblue") {
+          window.document.body.style.backgroundColor = "cornflowerblue";
+          window.document.querySelector("p#Resultado").innerHTML =
+            "Resultado: VOCÊ ALTEROU O TEMA PARA <strong>CLARO!<strong>";
+        } else {
+          window.document.body.style.backgroundColor = "darkblue";
+          window.document.getElementById("Resultado").innerHTML =
+            "Resultado: VOCÊ ALTEROU O TEMA PARA <strong>ESCURO!<strong>";
+        }
+      }
+    </script>
+  </body>
+</html>

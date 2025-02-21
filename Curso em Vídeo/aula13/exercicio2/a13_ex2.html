@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CJS - Aula 13</title>
+  <link rel="stylesheet" href="a13_ex2.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Verificando sua Idade</h1>
+  </header>
+  <section>
+    <div id="formulario">
+      <div>
+        <label for="ano_nascimento">Ano de Nascença:</label>
+        <input type="text" name="ano_nascimento" id="ano_nascimento" placeholder="Digite o ano " />
+      </div>
+      <br />
+      <div>
+        <label for="sexo">Selecione seu sexo:</label>
+        <input type="radio" name="sexo" value="Masculino" />Masculino
+        <input type="radio" name="sexo" value="Feminino" />Feminino
+      </div>
+      <div>
+        <br />
+        <input type="button" value="Verificar" onclick="verificaIdade()" id="botao"/>
+      </div>
+    </div>
+    <div id="resultado">
+      Aperte para Enviar!
+
+    </div>
+  </section>
+  
+  <footer>&copy;DiegoCalesco</footer>
+
+  <script src="a13_ex2.js"></script>
+</body>
+
+</html>

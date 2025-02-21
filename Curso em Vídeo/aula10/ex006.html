@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJS - AULA 10</title>
+    <style>
+        div#area{
+            font: normal 20pt Calibri;
+            background-color: darkgreen;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+    <script>
+        var a = document.querySelector('div#area');
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseleave', sair)
+
+        function clicar(){
+           a.innerHTML = "VAI CURINTIAAAA";
+           a.style.background = 'black'
+        }
+
+        function entrar(){
+           a.innerHTML = "VAI PARMEIRA";
+           a.style.background = 'lime'
+        }
+
+        function sair(){
+           a.innerHTML = "VAI VAXCAO";
+           a.style.background = 'white'
+           a.style.color = 'black';
+        }
+        
+    </script>
+</body>
+</html>

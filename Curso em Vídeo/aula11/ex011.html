@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CJS - AULA 11</title>
+    <style>
+      body {
+        background-color: darkorchid;
+        color: white;
+        font: normal 15pt Arial;
+      }
+
+      input {
+        min-height: 20px;
+        background-color:cadetblue;
+        color: white;
+        font: bold 15pt Arial;
+        border-color: transparent;
+      }
+
+      input#butao{
+        background-color:cadetblue;
+        color: white;
+        font: bold 15pt Arial
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Verificando sua nacionalidade</h1>
+    <label for="nacionalidade">Digite a seu país:</label><br /><br />
+    <input type="text" name="nacionalidade" id="nacionalidade" /><br /><br />
+    <input
+      type="button"
+      value="Checar"
+      id="butao"
+      onclick="checaNacionalidade()"
+    /><br /><br />
+    <span id="resultado"></span>
+    <script>
+      function checaNacionalidade() {
+        var nacionalidade = document.getElementById("nacionalidade").value;
+        nacionalidade = nacionalidade.toLowerCase();
+        if (nacionalidade === "brasil") {
+          document.getElementById("resultado").innerHTML =
+            "Você é <strong>brasas<?strong>!";
+        } else if (nacionalidade === "frança") {
+          document.getElementById("resultado").innerHTML =
+            "Você é <strong>franças<?strong>!";
+        } else {
+          document.getElementById("resultado").innerHTML =
+            "Você é <strong>UM MAMACO<?strong>!";
+        }
+      }
+    </script>
+  </body>
+</html>

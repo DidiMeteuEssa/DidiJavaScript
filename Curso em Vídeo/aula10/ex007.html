@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJS - AULA 10</title>
+    <style>
+        body{
+            color: white;
+            font: normal 20px Arial;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1" placeholder="Digite um número">
+    <input type="number" name="txtn2" id="txtn2" placeholder="Digite outro número"> 
+    <input type="button" value="Somar" onclick="somar()"><br><br>
+    <span id="resultado">Resultado: </span>
+    <script>
+        function somar(){
+            var tn1 = document.getElementById('txtn1');
+            var tn2 = document.getElementById('txtn2');
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+
+            var soma = n1 + n2;
+            document.getElementById('resultado').innerHTML = `Resultado: <strong>${soma}</strong>`
+        }
+    </script>
+</body>
+</html>

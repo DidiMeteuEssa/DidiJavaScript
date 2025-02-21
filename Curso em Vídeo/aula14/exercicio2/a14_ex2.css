@@ -1,0 +1,31 @@
+body{
+    background-color: darkcyan;
+    font: normal 15pt Arial;
+    color: white;
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    width: 500px;
+    min-height: fit-content;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+select#lista_resultado{
+    margin-top: 30px;
+    width: auto;
+    text-align: left;
+
+}
