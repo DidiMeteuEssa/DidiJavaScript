@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header><h1>Calculadora</h1></header>
+    <div id="calculadora">
+        <div id="resultado">
+       
+        </div>
+        <div id="botoes">
+            <div id="numeros">
+                <input class="inputNum" type="button" value="1" onclick="inserirNumero(1)">
+                <input class="inputNum" type="button" value="2" onclick="inserirNumero(2)">
+                <input class="inputNum" type="button" value="3" onclick="inserirNumero(3)">
+                <input class="inputNum" type="button" value="4" onclick="inserirNumero(4)">
+                <input class="inputNum" type="button" value="5" onclick="inserirNumero(5)">
+                <input class="inputNum" type="button" value="6" onclick="inserirNumero(6)">
+                <input class="inputNum" type="button" value="7" onclick="inserirNumero(7)">
+                <input class="inputNum" type="button" value="8" onclick="inserirNumero(8)">
+                <input class="inputNum" type="button" value="9" onclick="inserirNumero(9)">
+                <input class="inputNum" type="button" value="0" style="grid-column: 2;" onclick="inserirNumero(0)">
+            </div>
+            <div id="operacoes">
+                <input class="inputOpr" type="button" value="/" onclick="inserirOperac()">
+                <input class="inputOpr" type="button" value="X" onclick="inserirOperac()">
+                <input class="inputOpr" type="button" value="-" onclick="inserirOperac()">
+                <input class="inputOpr" type="button" value="+" onclick="inserirOperac()">
+                <input class="inputOpr" type="button" value="=" onclick="inserirOperac()">
+            </div>
+        </div>
+    </div>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>

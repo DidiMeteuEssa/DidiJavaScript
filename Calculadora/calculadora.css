@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(5, 86, 207);
+    font: normal 15pt Arial;
+    color: white;
+}
+
+header{
+    text-align: center;
+}
+
+div#calculadora {
+    background-color: black;
+    border-radius: 10px;
+    width: 250px; 
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+div#botoes{
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div#numeros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 200px;
+    
+}
+
+input.inputNum{
+    background-color: rgb(182, 177, 177);
+    height: 50px;
+    width: 50px;
+    font: normal 15pt Arial;
+    color: white;
+    
+}
+
+
+div#resultado{
+    margin-left: auto;
+    margin-top: auto;
+    font: normal 30pt Arial;
+}
+
+
+input.inputOpr{
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+    font: normal 15pt Arial;
+    color: white;
+    border-radius: 10px;
+}
+    
